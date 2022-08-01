@@ -1,0 +1,25 @@
+ \newcommand{\noop}[1]{}
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{\nolinkurl{#1}}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{{Do} {et~al.}(2018){Do}, {Kerzendorf}, {Konopacky}, {Marcinik},
+  {Ghez}, {Lu}, \& {Morris}}]{do:18}
+{Do}, T., {Kerzendorf}, W., {Konopacky}, Q., {et~al.} 2018, \apjl, 855, L5,
+  \dodoi{10.3847/2041-8213/aaaec3}
+
+\bibitem[{{Do} {et~al.}(2015){Do}, {Kerzendorf}, {Winsor}, {St{\o}stad},
+  {Morris}, {Lu}, \& {Ghez}}]{do:15}
+{Do}, T., {Kerzendorf}, W., {Winsor}, N., {et~al.} 2015, \apj, 809, 143,
+  \dodoi{10.1088/0004-637X/809/2/143}
+
+\bibitem[{{Feldmeier-Krause} {et~al.}(2017){Feldmeier-Krause}, {Kerzendorf},
+  {Neumayer}, {Sch{\"o}del}, {Nogueras-Lara}, {Do}, {de Zeeuw}, \&
+  {Kuntschner}}]{Feldmeier-Krause2017}
+{Feldmeier-Krause}, A., {Kerzendorf}, W., {Neumayer}, N., {et~al.} 2017,
+  \mnras, 464, 194, \dodoi{10.1093/mnras/stw2339}
+
+\end{thebibliography}

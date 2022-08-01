@@ -1,0 +1,268 @@
+\documentclass[E5,LUFonts]{lundphdthesis}
+% Note using overleaf: Compile with "XeLaTeX" if you want LU fonts
+
+% Possible options:
+% E5 or G5 depending on size of thesis book
+% LUFonts for using LU chosen fonts
+% MathFonts for using the LU chosen fonts for math mode, I don't really think it looks good
+
+
+% ==================================
+% ==================================
+% ==================================
+%
+% FRONTMATTER
+%
+% ==================================
+% ==================================
+% ==================================
+
+\title{Stellar kinematics in surveys and simulations}
+%\subtitle{subtitle here}   % optional
+\author{Daniel Mikkola}
+
+\degree{Thesis for the degree of Doctor of Philosophy}
+\titleblurb{Thesis advisor: Dr.\ David Hobbs\\
+Co-advisor: Dr.\ Paul McMillan\\
+Faculty opponent: Dr.\ Marie Martig}
+\announcement{To be presented, with the permission of the Faculty of Science of Lund University, for public criticism in the Lundmark lecture hall (Lundmarksalen) at the Department of Astronomy and Theoretical Physics on the${18}^\textrm{\tiny th}$ November 2022 at 13:00.}
+
+\begin{document}
+
+\maketitleshort   %this one is optional
+
+
+% ==================================
+% "spikningsblad" consists of title with blurb and a data sheet paper
+% if the entire spikningsblad is in pdf format these two pages can be handled with includepdf
+\maketitlewithblurb
+\newpage
+
+% the following overlay the total page number count dynamically, adjust vspace and hspace accordingly
+% if too many problems with that, just use \includepdf{datasheet_name} instead
+%\includepdf{datasheet_name}
+\AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight]{datasheet_empty.pdf}}}
+\vspace*{13.75cm}\hspace*{6.1cm}{\footnotesize\ztotpages}   % modify the distances and font size as needed
+\newpage
+
+
+% ==================================
+% actual title page
+\maketitle
+
+
+% ==================================
+% make page with evaluation committee and copyright information
+\newpage
+\begin{center}
+	\textbf{Faculty Opponent} \\
+	\vspace{1em}
+	Prof.\ Someone Someoneson\\
+	Department of Astronomy, Someplace University,\\
+	Town, Country\\
+	\vspace{1.5em}
+	\textbf{Evaluation Committee} \\
+	\vspace{1em}
+    Dr.\ Someone Someoneson\\
+    Department of Astronomy, Someplace University,\\
+    Town, Country\\
+    \vspace{0.7em}
+    Dr.\ Someone Someoneson\\
+    Department of Astronomy, Someplace University,\\
+    Town, Country\\
+	\vspace{0.7em}
+    Dr.\ Someone Someoneson\\
+    Department of Astronomy, Someplace University,\\
+    Town, Country\\
+\end{center}
+\vfill
+
+{\small\parindent0pt
+\textbf{Front cover:} Explanation of the front cover.
+Credit: xx Edited by xx and printed with permission from xx.
+
+\textbf{Back cover:} .
+
+\textbf{Funding information:} This thesis work is financially supported by -.
+
+\vspace{1em}
+\copyright\, Daniel Mikkola 2022
+
+\vspace{1em}
+Faculty of Science, Department of Astronomy and Theoretical Physics
+
+\vspace{1em}
+ISBN: ~(print)\\ % ISBN av svenska ISBN centralen
+ISBN: ~(pdf) % ISBN av svenska ISBN centralen
+
+\vspace{1em}
+Printed in Sweden by Media-Tryck, Lund~University, Lund 2022\\
+\includegraphics[width=0.5\textwidth]{logo/miljoeloggor}
+}
+
+% ==================================
+% dedication page
+\newpage
+
+\vspace*{140pt}
+\begin{flushright}
+\textit{Till morfar}
+\end{flushright}
+
+% ==================================
+% table of contents
+\cleardoublepage
+\frontmatter
+\pagestyle{plain}
+\setcounter{page}{1} % Page Roman 1 of the frontmatter
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+\renewcommand{\thesection}{\arabic{section}}
+\tableofcontents
+
+
+% ==================================
+% Work list and popular abstract
+\newpage
+\sectionhidenum{List of publications}
+
+This thesis is based on the following peer-reviewed publications:
+\vspace{1mm}
+
+% \phdarticle{title}{authors}{journal}
+\phdarticle{Radial migration and vertical action in N-body simulations}
+{\textbf{Mikkola, D.}; McMillan, P. J.; Hobbs, D. (2020)}
+{Monthly Notices of the Royal Astronomical Society, Volume 495, Issue 3, pp. 3295-3306}
+\phdarticle{The velocity distribution of white dwarfs in Gaia EDR3}
+{\textbf{Mikkola, D.}; McMillan, P. J.; Hobbs, D.; Wimarsson, J (2022)}
+{Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 4, pp. 6201-6216}
+\phdarticle{The velocity distribution of local halo and disk stars in Gaia DR3 from transverse motion}
+{\textbf{Mikkola, D.}; McMillan, P. J.; Hobbs, D. (2022)}
+{\textit{Submitted to Monthly Notices of the Royal Astronomical Society}}%Monthly Notices of the Royal Astronomical Society, Volume VVV, Issue I, pp. pppp-pppp}
+%\phdarticle{Paper 4 title}
+%{\textbf{Mikkola, D.}; McMillan, P. J.; Hobbs, D. (2020)}
+%{Monthly Notices of the Royal Astronomical Society, Volume VVV, Issue I, pp. pppp-pppp}
+%\phdarticle{nishiyama stars ...}
+%{\textbf{Thorsbro, B.}; Ryde, N.; Rich, R. M.; ...}
+%{In manuscript}
+\makephdarticletable
+
+
+\noindent Papers I, II, and III  are reproduced with permission from Monthly Notices of the Royal Astronomical Society.
+
+\newpage
+
+%\newpage
+%\noindent Positions of trust undertaken during the PhD education:
+%\begin{enumerate}
+%    \item Secretary of the PhD student union at the Faculty of Science, 2017/18.
+%    \item Chair of the PhD student union at the Faculty of Science, 2018/19, representing approximately 450 PhD students.
+%    \item Chair of the PhD student union at Lund University, 2019/20, representing approximately 2100 PhD students.
+%\end{enumerate}
+
+%\vspace{2mm}
+%\begin{center}
+%\begin{minipage}{0.7\linewidth}
+%\textit{``An easily governed university is no university at all.''}
+%
+%~\hfill\footnotesize{\citep{boultonlucas:08}}  %(Boulton and Lucas, 2008)
+%\end{minipage}
+%\end{center}
+
+
+% ==================================
+% Popular summary (ENGLISH)
+\include{frontmatter/populareng}
+
+% ==================================
+% Popular summary (SWEDISH)
+\include{frontmatter/popularswe}
+
+% ==================================
+% Acknowledgements   optional
+\include{frontmatter/acknowledgements}
+
+
+% Prepare settings for main document
+\mainmatter           % Page numbers arabic
+\setcounter{table}{0} % Reset table counters to not count the publications table
+\setcounter{page}{1}  % Rest page counters, this is where it all starts!
+
+% ==================================
+% ==================================
+% ==================================
+%
+% MAIN DOCUMENT
+%
+% ==================================
+% ==================================
+% ==================================
+
+\chapter*{Galactic dynamics in the Gaia era}
+\addcontentsline{toc}{chapter}{Galactic dynamics in the Gaia era}
+\input{textcontent/introduction}
+\addcontentsline{toc}{section}{Paper I}
+\addcontentsline{toc}{subsection}{Galactic kinematics}
+\input{textcontent/galactickinematics}
+
+\input{textcontent/radialmigration}
+
+\input{textcontent/velocitydistributions}
+
+\input{textcontent/simulations}
+
+\input{textcontent/outlook}
+
+% ===============================================================
+% ====================== References:  ===========================
+% depending on your field there can be a need for different styles etc.
+% this example uses a style defined by American Astronomical Society journals
+
+% Bibliography renamed to references
+\renewcommand{\bibname}{References}
+\bibliographystyle{aasjournal.bst}
+\input{aasjournalmacros.tex}
+{\footnotesize\bibliography{references}}  % Link to bibtex file %%%%%%%%%%%%%%%%%%%
+
+% ==================================
+% ==================================
+% ==================================
+%
+% ARTICLES
+%
+% ==================================
+% ==================================
+% ==================================
+
+\chapterhidenum{Scientific publications}
+
+\input{papers/authorcontributions}
+
+% ==================================
+% INSERT PAPERS
+% ==================================
+% Comment-out the 'includepdf' to compile faster while you are writing.
+
+% PAPER I
+\paperpagemark{Radial migration and vertical action in \textit{N}-body simulations}
+%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/mikkola_2020_migration}
+
+% PAPER II
+\paperpagemark{Detailed Abundances for the Old Population near the Galactic Center. I. Metallicity Distribution of the Nuclear Star Cluster}
+%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/rich_2017_mdf}
+
+% PAPER III
+\paperpagemark{Evidence against anomalous compositions for giants in the Galactic Nuclear Star Cluster}
+%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/thorsbro_2018_scandium}
+
+% PAPER IV
+\paperpagemark{Atomic Data Needs in Astrophysics: The Galactic Center ``Scandium Mystery''}
+%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/thorsbro_2020_atoms}
+
+% PAPER V
+\paperpagemark{Detailed Abundances in the Galactic Center: Evidence of a Metal-rich Alpha-enhanced Stellar Population}
+%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/thorsbro_2020_alpha}
+
+
+
+\end{document}

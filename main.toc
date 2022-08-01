@@ -1,0 +1,21 @@
+\babel@toc {english}{}\relax
+\contentsline {section}{List of publications}{ii}{}%
+\contentsline {section}{Popular summary}{iii}{}%
+\contentsline {section}{Populärvetenskaplig sammanfattning}{iv}{}%
+\contentsline {section}{Acknowledgements}{v}{}%
+\contentsline {chapter}{Galactic dynamics in the Gaia era}{1}{}%
+\contentsline {section}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{Paper I}{1}{}%
+\contentsline {subsection}{Galactic kinematics}{1}{}%
+\contentsline {section}{\numberline {2}Galactic kinematics}{1}{}%
+\contentsline {section}{\numberline {3}Radial migration}{1}{}%
+\contentsline {section}{\numberline {4}Velocity distributions}{1}{}%
+\contentsline {section}{\numberline {5}Simulations}{1}{}%
+\contentsline {section}{\numberline {6}Outlook}{1}{}%
+\contentsline {chapter}{Scientific publications}{5}{}%
+\contentsline {section}{Paper summaries and author contributions}{5}{}%
+\contentsline {section}{Paper \uppercase {i\relax }: Radial migration and vertical action in \textit {N}-body simulations{}}{9}{}%
+\contentsline {section}{Paper \uppercase {ii\relax }: Detailed Abundances for the Old Population near the Galactic Center. I. Metallicity Distribution of the Nuclear Star Cluster{}}{11}{}%
+\contentsline {section}{Paper \uppercase {iii\relax }: Evidence against anomalous compositions for giants in the Galactic Nuclear Star Cluster{}}{13}{}%
+\contentsline {section}{Paper \uppercase {iv\relax }: Atomic Data Needs in Astrophysics: The Galactic Center ``Scandium Mystery''{}}{15}{}%
+\contentsline {section}{Paper \uppercase {v\relax }: Detailed Abundances in the Galactic Center: Evidence of a Metal-rich Alpha-enhanced Stellar Population{}}{17}{}%

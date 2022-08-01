@@ -1,0 +1,90 @@
+\section{Simulations}\label{sect:simulations}
+
+%Spectroscopy was already founded in the 19th century when the dark Fraunhofer lines in the solar spectrum were identified to be the absorption of light caused by the presence of chemical species in the solar photosphere. The discovery was facilitated by shining light through different chemical species in a laboratory and recording at which wavelengths the light was absorbed. Up to the present day laboratory measurements are still a fundamental ingredient for the continued development of stellar spectroscopy \citep{nailingthestars2013}.
+%
+%Although the recording of the spectra of stars is important, an understanding is not reached until the underlying physics is well enough known to be able to reproduce the observed stellar spectra using physical modelling. The input needed for good modelling can broadly be categorised as
+%\begin{itemize}
+%    \item Atomic and molecular physics,
+%    \item Stellar photospheres, and
+%    \item Radiation transport.
+%\end{itemize}
+%
+%A knowledge of these topics allows us to carry out abundance analyses of the observed stars. The topics are discussed in turn next, followed by a few pertinent comments on abundance analysis and astrophysical line lists.
+%
+%\subsection{Atomic and molecular physics}
+%
+%In modern atomic physics the state of an electron is described in a quantum mechanical way via a wave function. The energy level transition in an atom whereby an electron moves from one energy level to another is considered as a state change from one wave function to another. The electron has an electric charge and as the two wave functions have different probability distributions for the position of the electron there is a charge distribution difference between them, and thus there exists an electric dipole moment.
+%
+%This dipole interacts with the radiation field around the atom, and if the radiation field resonates with the natural frequency of the dipole then energy can be put into the atom in form of absorption or removed from the atom in form of stimulated emission. The natural frequency is also known as the wavelength of the transition. Knowing this to high precision is necessary to identify the lines in a spectrum.
+%
+%The dipole also has an oscillator strength, which can be hard to understand intuitively, but in a way it represents the probability that a transition will happen. The higher the chance for a transition the stronger the oscillator is said to be, and in the spectrum this manifests itself as a stronger line.
+%
+%In molecules there are similar energy transitions if the electrons in the atoms move around, but there are also energy transitions when switching between different rotational and vibrational modes of the molecule itself. The interactions of rotational and vibrational modes often gives rise to molecular bands, which consists of a large number of spectral lines grouped near each other in the spectrum.
+%
+%If one tries to identify all possible energy transitions that exist in our 92 naturally occurring elements, it amounts to a staggering number. On top of that the molecular data needs to be taken into account. In the infrared wavelength range, very few laboratory measurements have in fact been carried out, which makes stellar spectroscopy particularly challenging.
+%
+%One approach to obtaining usable atomic physics data is by employing theory to calculate the values. There are promising results showing that if theory is calibrated using measurements from the laboratory it can provide an avenue for cataloguing all this data \citep[e.g.][]{pehlivan:mg,pehlivan:sc17}.
+%
+%An important property of atoms with an odd number of nucleons, in particular if the number of protons is odd, is nuclear spin, which gives rise to hyperfine structure. If the nucleus of an atom has a nuclear spin the electronic energy levels in the atom are affected, and this has to be taken into account when calculating theoretical energy level transitions.
+%
+%\subsection{Stellar photospheres}
+%
+%The physical region in the star from where the radiation escapes is aptly named the photosphere and it is the region that determines the shape of the spectrum that we observe. Principally, the energy is generated in the interior of the star and is transported up to the photosphere through radiation transport and convection.
+%
+%The key parameters we are interested in are the temperature and pressure gradients of the photosphere, since they govern which chemical species can be detected. For simplicity, the photosphere is often only modelled in the radial direction, with so called 1D models, which provide a temperature and pressure stratification. Doing full 3D modelling would enable a higher fidelity on the heat transport from convection, which affects the temperature distribution. However, by employing mixing length theory this can be approximated to a good degree for stars like M giants, which has been shown by comparing 3D models with 1D models for giant stars \citep{cerni:17}.
+%
+%Performing a full 3D model would also enable us to understand the particle velocity fields in the photosphere, which is known to affect the spectra of the stars. However, for most stars we can not resolve the surface in any case, and the effect of the velocity fields can be approximated by introducing some heuristic parameters to the 1D modelling, usually denominated the micro- and macro-turbulence.
+%
+%Temperature is not an inherently unique property. In the same patch of space, the temperature described by the Maxwellian velocity distribution of particles is not necessarily the same temperature described by the Saha-Boltzmann equation, which is governed by the distribution of electrons in energy levels of chemical species. However, when the particle density is high, and collisions between particles dominate the energy distribution compared to the photon interactions from radiation fields, the system is said to be in local thermodynamic equilibrium (LTE). In LTE the radiation field becomes the Planck black body radiation field, and the temperature becomes unique.
+%
+%LTE is a very powerful assumption that enables physical modelling to be simplified tremendously. For stars like M giants most of the photosphere can be said to be in LTE. However, the outer parts of the photosphere can be sparse and cause the LTE condition to fall away. To a first order the non-LTE (or NLTE) condition can be modelled with perturbation theory, adding so-called departure coefficients to the Saha-Boltzmann equation.
+%
+%NLTE calculations for M giants have only been done to a limited extent. We did some calculations on Si for Paper V together with our collaborator Anish Amarsi showing the departure coefficients to be insignificant for our analysis. Other elements are now being calculated \citep[see e.g.][]{amarsi:20}, and will be published as they are completed.
+%
+%\subsection{Radiation transport}
+%
+%Radiation transport is quite simple in concept, namely that along a beam of light with a certain frequency, $\nu$, the change of intensity, $I$, of the radiation is governed by the intensity added and removed from the beam at a given position along the beam axis, $s$,
+%\begin{equation}
+%    \frac{\textrm{d}I(\nu,s)}{\textrm{d}s} = I_\textrm{added}(\nu,s) - I_\textrm{removed}(\nu,s).
+%\end{equation}
+%However, the intensities added and removed can originate from many different sources and sinks depending on the fidelity of the physical modelling.
+%
+%In LTE the intensity added to the light beam is described by the Planck black body radiation function. However, in NLTE the intensity added could depend on the radiation field, which in turn could depend on the intensity of the light beam, making a circular dependence that increases the difficulty of solving the radiation equation.
+%%examples of radiation field dependence, photoionization and recombination
+%
+%The absorption of light at different frequencies varies, which leads to variations in how easy it is for the light to escape from the star as a function of frequency. If there are no chemical species to interact with the light of a given frequency the photon escaping the star could come from relatively deep regions of the star. If on the other hand the frequency of light matches a strong energy transition, most of the light at that frequency is absorbed, and only the photons from the very top of the star's surface are able to escape. The term opacity is used to describe how strongly light is being absorbed, and is a function of frequency.
+%
+%In cool stars the amount of free electrons and neutral hydrogen atoms are so plentiful that they interact with significant cross-sections in the following two absorption processes, which are respectively called $\textrm{H}^{-}$ bound-free and $\textrm{H}^{-}$ free-free \citep{1964MNRAS.128...93J}
+%\begin{align}
+%    \textrm{H}^{-} + \gamma &\longrightarrow \textrm{H} + \textrm{e}^{-} \\
+%    \textrm{H} + \textrm{e}^{-} + \gamma &\longrightarrow \textrm{H} + \textrm{e}^{-}
+%\end{align}
+%\noindent In both cases the energy of the photon is transferred to the electron. The photon absorption by these two processes are both weak functions of the photon frequency and set a minimum opacity for the star. Such an opacity is often dubbed the continuum opacity. For stars like M giants, and incidentally also stars like the Sun, the continuum opacity in the optical and infrared wavelength ranges is dominated by the H$^{-}$ bound-free and free-free absorption processes \citep{1939ApJ....90..611W,1958ApJ...128..633C}. In general such a continuum opacity sets the limits on how deep we can probe into a star by observing escaped light.
+%
+%For transitions between energy levels in chemical species, and even for a change of rotational and vibrational modes for molecules, we call the process bound-bound absorption. In the frequency range where strong energy transitions exist the opacity becomes very high, which causes a strong spectral line to be present in the spectrum. The assumption that we can make is that the continuum and weaker spectral lines are created deeper in the photosphere, while the stronger absorption lines, in particular the core of these lines, are created further out in the photosphere.
+%
+%This means that for the continuum and the weaker lines we can normally assume that the LTE conditions hold, but for the stronger lines we need to be concerned whether NLTE conditions need to be taken into account, and if so, to what degree.
+%
+%\subsection{Abundance analysis}
+%
+%The spectral lines of chemical species are affected not only by the oscillator strength of a given transition, but also by the abundance of said species. Knowing both the oscillator strength and the abundance allows a spectral line to be modelled. However, as mentioned earlier, when the line becomes strong other considerations enter into the modelling, not only NLTE issues, but also saturation issues.
+%
+%Restricting ourselves to weak lines, a knowledge of the atomic and molecular physics of the chemical species and their abundances suffices to model the spectral line. This emphasises the importance of having the correct atomic and molecular physics information since it directly affects the abundance determination.
+%
+%Excellent tools exist that combine atomic physics data and stellar photosphere models, and solve the radiation equation using a set of stellar parameters and abundances of chemical species. For the atomic physics data one can download the dataset organised by the VALD3 Collaboration \citep{vald3}, and for stellar photosphere models the excellent MARCS models are a good choice \citep{marcs:08}. A tool that has been utilised many times throughout the work presented in this thesis is the code called Spectroscopy Made Easy, SME \citep{sme,sme_code,sme_evolution}.
+%
+%\subsection{Astrophysical line list}
+%
+%A challenge with the data found in the VALD3 collaboration \citep{vald3} is that large parts of the data have been calculated theoretically and have yet to be verified by laboratory measurements. This is a particular problem in the infrared wavelength regime. The theoretical calculations are very good, but aim at being correct on a statistical level to support opacity calculations for creating stellar atmosphere models, like the MARCS models \citep{marcs:08}.
+%
+%For stellar spectroscopy it is, however, necessary to verify every data point for every single spectral line. Assuming the abundances in the Sun are well known, one can produce model spectra of the Sun and compare to observations. Any deviation in line strength between model and observation can then be attributed to imprecise theoretical calculations in the oscillator strengths.
+%
+%Adjusting the oscillator strength to make the model spectra fit the observation of the Sun thus produces a new data set of oscillator strengths. These oscillator strengths are called astrophysical oscillator strengths to signify their non-laboratory origin.
+%
+%Another challenge with the data found in VALD3 is that the wavelength of a spectral line has an uncertainty associated with it, this goes not only for the theoretical calculations, but also for the laboratory measurements. Making accurate theoretical energy calculations is extremely difficult and requires very good physical modelling and often increases the reach of the problem beyond what can feasibly be calculated even with the most powerful computers today \citep[see e.g.][]{fischer:16}. The wavelength measurements obtained from laboratory experiments are not always as precise as we would like for high resolution spectroscopy, in particular because we need not only to assign the spectral lines to a given species, but also to be able to fit models to observations for abundance analysis.
+%
+%When comparing model spectra of the Sun with observations it becomes clear that, as with oscillator strengths, adjustments to the wavelength of a spectral line can be needed to fit model to observation. By combining the astrophysical oscillator strengths and the wavelength adjustments, an astrophysical line list is created.
+%
+%A major part of our work in this project has been to develop an astrophysical line list in the infrared wavelength regime around 2 microns. In total we identified more than 700 interesting spectral lines for our project and slightly modified about 570 of them \citep{thorsbro:17}.
+
+
