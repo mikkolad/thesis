@@ -57,8 +57,8 @@ Faculty opponent: Dr.\ Marie Martig}
 \begin{center}
 	\textbf{Faculty Opponent} \\
 	\vspace{1em}
-	Prof.\ Someone Someoneson\\
-	Department of Astronomy, Someplace University,\\
+	Dr.\ Marie Martig\\
+	Astrophysics Research Institute, Liverpool John Moores University,\\
 	Town, Country\\
 	\vspace{1.5em}
 	\textbf{Evaluation Committee} \\
@@ -117,7 +117,7 @@ Printed in Sweden by Media-Tryck, Lund~University, Lund 2022\\
 \setcounter{page}{1} % Page Roman 1 of the frontmatter
 \setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{2}
-\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \tableofcontents
 
 
@@ -198,20 +198,13 @@ This thesis is based on the following peer-reviewed publications:
 % ==================================
 % ==================================
 
-\chapter*{Galactic dynamics in the Gaia era}
-\addcontentsline{toc}{chapter}{Galactic dynamics in the Gaia era}
-\input{textcontent/introduction}
-\addcontentsline{toc}{section}{Paper I}
-\addcontentsline{toc}{subsection}{Galactic kinematics}
-\input{textcontent/galactickinematics}
-
-\input{textcontent/radialmigration}
-
-\input{textcontent/velocitydistributions}
-
-\input{textcontent/simulations}
-
-\input{textcontent/outlook}
+\addcontentsline{toc}{chapter}{Research context}
+\input{textcontent/researchcontext}
+\input{textcontent/milkyway}
+\input{textcontent/paper1}
+\input{textcontent/motionsofstars}
+\input{textcontent/paper2}
+\input{textcontent/paper3}
 
 % ===============================================================
 % ====================== References:  ===========================
@@ -248,20 +241,12 @@ This thesis is based on the following peer-reviewed publications:
 %\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/mikkola_2020_migration}
 
 % PAPER II
-\paperpagemark{Detailed Abundances for the Old Population near the Galactic Center. I. Metallicity Distribution of the Nuclear Star Cluster}
-%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/rich_2017_mdf}
+\paperpagemark{The velocity distribution of white dwarfs in Gaia EDR3}
+%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/mikkola_2022_whitedwarfs}
 
 % PAPER III
-\paperpagemark{Evidence against anomalous compositions for giants in the Galactic Nuclear Star Cluster}
-%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/thorsbro_2018_scandium}
-
-% PAPER IV
-\paperpagemark{Atomic Data Needs in Astrophysics: The Galactic Center ``Scandium Mystery''}
-%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/thorsbro_2020_atoms}
-
-% PAPER V
-\paperpagemark{Detailed Abundances in the Galactic Center: Evidence of a Metal-rich Alpha-enhanced Stellar Population}
-%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/thorsbro_2020_alpha}
+\paperpagemark{The velocity distribution of local halo and disk stars in Gaia DR3 from transverse motion}
+%\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/mikkola_2022_local}
 
 
 
