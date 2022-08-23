@@ -74,4 +74,51 @@ Another source of radial mixing was described first in a seminal paper by \cite{
 \begin{equation}
     \frac{d}{dt}\pmb{L} = \frac{d}{dt}(\pmb{r}\times\pmb{p}) = \pmb{r}\times\pmb{F} = \pmb{\Gamma}.
 \end{equation}
-Axisymmetric features like bars and spirals move with constant angular velocity, which means that the non-angular velocity increases further out. This means that for stars with approximately constant circular velocity there is a radius at which the velocity of a star and spiral/bar is the same, called \textit{corotation}. Beyond this point stars move more slowly than the spiral and within it they move faster. Faster stars catch up to the feature and will have a force, $\pmb{F}$, directed towards it. Slower stars instead fall into it with a force in the opposite direction. We illustrate this in Fig. \ref{fig:torquing} which shows that for the fast stars, the torque will be directed inwards, i.e., negative which decreases the angular momentum and transfers it to a smaller $R_g$ orbit where it moves faster. It eventually catches up to the spiral/bar and is given a positive torque, migrating outwards. 
+Axisymmetric features like bars and spirals move with constant angular velocity, which means that the non-angular velocity increases further out. This means that for stars with approximately constant circular velocity there is a radius at which the velocity of a star and spiral/bar is the same, called \textit{corotation}. Beyond this point stars move more slowly than the spiral and within it they move faster. Faster stars catch up to the feature and will have a force, $\pmb{F}$, directed towards it. Slower stars instead fall into it with a force in the opposite direction. We illustrate this in Fig. \ref{fig:torquing} which shows that for the fast stars, the torque will be directed inwards, i.e., negative which decreases the angular momentum and transfers it to a smaller $R_g$ orbit where it moves faster. It eventually catches up to the spiral/bar and is given a positive torque, migrating outwards. In this simple view the orbit would go back and forth but due to the transient nature of spiral arms and the plurality of axisymmetric features, this is not a likely outcome.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/actionangle.pdf}
+    \caption{A polar coordinate analogy of action-angle variables to phase-space coordinate. An orbit oscillating in some coordinate $q_i$ will have a velocity, $v_i$ which also oscillates. A point on the same orbit can be described with a constant area, $2\pi J_i$ and an angle $\theta_i$.} % Fig. 1.6
+    \label{fig:actionangle}
+\end{figure}
+
+This provides the `torquing' part. The cold part of the term comes from the fact that the migration does not increase the random motion of the affected stars, leaving them kinematically unscathed from the interaction. To properly explain this concept, we introduce \textit{action-angle} variables to describe a stellar orbit. A simple polar-coordinate analogy is given in Fig. \ref{fig:actionangle} which shows that an orbit in a certain dimension, $i$, can be described with two oscillating phase-space coordiantes $(q_i, v_i)$ or one constant and one oscillating, $(J_i, \theta_i)$.
+
+If we place ourselves in the rotating frame of a Galaxy, moving with a pattern speed $\Omega_p$ relative to the intertial frame, we can describe its total energy or Hamiltonian, $E_J$, using the Hamiltonian of the inertial frame, $E$:
+\begin{equation}\label{eq:jacobi}
+    E_J = E - \Omega_pL,
+\end{equation}
+Where $L$ is the angular momentum. We call $E_J$ the \textit{Jacobi integral} (see \citealt{binney:08} chapter 3.3.2 for a full derivation) and it is constant in time. So the different between two moments is:
+\begin{equation}
+    \Delta E = \Omega_p\Delta L,
+\end{equation}
+which itself can be split into radial and azimuthal energy parts
+\begin{equation}\label{eq:Echange}
+    \Delta E = \frac{\partial H}{\partial L}\Delta L + \frac{\partial H}{\partial J_R}\Delta J_R,
+\end{equation}
+where $J_R$ is the \textit{radial action}. If we use Hamilton's equations with $\pmb{J}$ as the momentum and $\pmb{\theta}$ as the coordinate we find:
+\begin{equation}
+    \dot{J}_i = - \frac{\partial H}{\partial \theta_i} = 0 \qquad \dot{\theta}_i = \frac{\partial H}{\partial J_i} = \Omega_i,
+\end{equation}
+where $\Omega_i$ is an angular velocity. We have that $\partial H / \partial J_r = \omega_R$ and $\partial H / \partial L = \Omega$, the radial and azimuthal frequencies. Combining this with eq. \eqref{eq:Echange} gives
+\begin{equation}
+    \Delta E = \Omega\Delta L + \omega_R \Delta J_r,
+\end{equation}
+which when put into eq. \eqref{eq:jacobi} yields
+\begin{equation}\label{eq:churning}
+    \Delta J_r = \frac{\Omega_p - \Omega}{\omega_R}\Delta L.
+\end{equation}
+It is the implications of eq. \eqref{eq:churning} that provides the `cold' part. Stars have almost constant circular velocity across the disk which means that angular momentum corresponds to guiding radius, $L_z \propto R_g$. We know that torquing provides a change in the angular momentum from our discussion above, so this will correspond to a change in the radial action of the orbit, unless the angular velocity of the star matches that of the axisymmetric feature, $\Omega = \Omega_p$, which is the case near corotation. This behaviour was demonstrated and detailed in \cite{sellwood:02} which showed also that the migration caused by the cold torquing can displace the star on kiloparsec scales, without imparting any increased motions. The nature of cold torquing is therefore not only impressive but also frustrating since if stars are able to change their guiding radius by such scales without having any kinematic evidence of such a process, the history of different regions of the Galaxy become much more complex. 
+
+It is worth mentioning the other resonances that exist besides corotation. A particularly strong such resonance is when the radial frequency, $\omega_R$ (identical to $\kappa$ in the epicyclic approximation), is a multiple of the frequency with which the star encounters the non-axisymmetric feature $(\Omega_p - \Omega)$. In other words when
+\begin{equation}
+\omega_R = \pm m(\Omega_p - \Omega).
+\end{equation}
+These resonances are called \textit{Lindblad resonances} after Swedish astronomer Bertil Lindblad (1895 - 1965). The positive sign corresponds to an orbit in which the rotating feature sweeps by the slower star as it completes $m$ radial oscillations and is known as an \textit{Outer Lindblad Resonances} (OLR). The negative sign is when the fast star rotates past the rotating feature by the time it completes its $m$ radial osscillations and is then called an \textit{Inner Lindblad Resonance} (ILR). At these resonances we have from eq. \eqref{eq:churning}
+\begin{equation}
+    \Delta J_r = \pm \frac{1}{m}\Delta L,
+\end{equation}
+which shows how migration at these resonances increases the radial action, therefore making them a potential source of migration by radial heating as discussed previously.
+
+Clearly, must understand how stars are radially migrated. In particular, the process of cold torquing must be well understood since it is unique in the fact that it leaves no dynamical trace. Without these insights we cannot have a full picture of the history and evolution of our Galaxy.
