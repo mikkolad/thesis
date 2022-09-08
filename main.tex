@@ -6,7 +6,8 @@
 % LUFonts for using LU chosen fonts
 % MathFonts for using the LU chosen fonts for math mode, I don't really think it looks good
 
-
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\newcommand{\longunderbrace}[2]{\underbrace{#1}_{\text{\hbox to 0cm{\hss #2 \hss}}}} 
 % ==================================
 % ==================================
 % ==================================
@@ -238,14 +239,17 @@ This thesis is based on the following peer-reviewed publications:
 
 % PAPER I
 \paperpagemark{Radial migration and vertical action in \textit{N}-body simulations}
+\input{papers/contributionsp1}
 %\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/mikkola_2020_migration}
 
 % PAPER II
 \paperpagemark{The velocity distribution of white dwarfs in Gaia EDR3}
+\input{papers/contributionsp2}
 %\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/mikkola_2022_whitedwarfs}
 
 % PAPER III
 \paperpagemark{The velocity distribution of local halo and disk stars in Gaia DR3 from transverse motion}
+\input{papers/contributionsp3}
 %\includepdf[pages=-,width=1.20\textwidth,pagecommand={\thispagestyle{plain}}]{papers/mikkola_2022_local}
 
 

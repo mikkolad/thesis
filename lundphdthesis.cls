@@ -357,3 +357,5 @@
 % math libraries
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+\RequirePackage{mathrsfs}
+\RequirePackage{mathtools}
