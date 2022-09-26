@@ -5,9 +5,13 @@
 % E5 or G5 depending on size of thesis book
 % LUFonts for using LU chosen fonts
 % MathFonts for using the LU chosen fonts for math mode, I don't really think it looks good
-
+\usepackage{bm}
+\usepackage{siunitx}
 \newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
 \newcommand{\longunderbrace}[2]{\underbrace{#1}_{\text{\hbox to 0cm{\hss #2 \hss}}}} 
+\newcommand{\as}{$^{\prime\prime}$}
+\newcommand{\am}{$^{\prime}$}
+
 % ==================================
 % ==================================
 % ==================================
@@ -41,8 +45,8 @@ Faculty opponent: Dr.\ Marie Martig}
 
 % the following overlay the total page number count dynamically, adjust vspace and hspace accordingly
 % if too many problems with that, just use \includepdf{datasheet_name} instead
-%\includepdf{datasheet_name}
-\AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight]{datasheet_empty.pdf}}}
+% \includepdf{datasheet_mikkola}
+\AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight]{datasheet_mikkola.pdf}}}
 \vspace*{13.75cm}\hspace*{6.1cm}{\footnotesize\ztotpages}   % modify the distances and font size as needed
 \newpage
 
@@ -60,21 +64,21 @@ Faculty opponent: Dr.\ Marie Martig}
 	\vspace{1em}
 	Dr.\ Marie Martig\\
 	Astrophysics Research Institute, Liverpool John Moores University,\\
-	Town, Country\\
+	Liverpool, United Kingdom\\
 	\vspace{1.5em}
 	\textbf{Evaluation Committee} \\
 	\vspace{1em}
-    Dr.\ Someone Someoneson\\
-    Department of Astronomy, Someplace University,\\
-    Town, Country\\
+    Dr.\ Lise Christensen\\
+    Niels Bohr Institute, University of Copenhagen,\\
+    Copenhagen, Denmark\\
     \vspace{0.7em}
-    Dr.\ Someone Someoneson\\
-    Department of Astronomy, Someplace University,\\
-    Town, Country\\
+    Dr.\ Christa Gall\\
+    Niels Bohr Institute, University of Copenhagen,\\
+    Copenhagen, Denmark\\
 	\vspace{0.7em}
-    Dr.\ Someone Someoneson\\
-    Department of Astronomy, Someplace University,\\
-    Town, Country\\
+    Dr.\ Sijing Shen\\
+    Institute of Theoretical Astrophysics, University of Oslo,\\
+    Oslo, Norway\\
 \end{center}
 \vfill
 
@@ -93,8 +97,8 @@ Credit: xx Edited by xx and printed with permission from xx.
 Faculty of Science, Department of Astronomy and Theoretical Physics
 
 \vspace{1em}
-ISBN: ~(print)\\ % ISBN av svenska ISBN centralen
-ISBN: ~(pdf) % ISBN av svenska ISBN centralen
+ISBN: 978-91-8039-411-6 (print)\\ % ISBN av svenska ISBN centralen
+ISBN: 978-91-8039-412-3 (pdf) % ISBN av svenska ISBN centralen
 
 \vspace{1em}
 Printed in Sweden by Media-Tryck, Lund~University, Lund 2022\\
@@ -137,7 +141,7 @@ This thesis is based on the following peer-reviewed publications:
 \phdarticle{The velocity distribution of white dwarfs in Gaia EDR3}
 {\textbf{Mikkola, D.}; McMillan, P. J.; Hobbs, D.; Wimarsson, J (2022)}
 {Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 4, pp. 6201-6216}
-\phdarticle{The velocity distribution of local halo and disk stars in Gaia DR3 from transverse motion}
+\phdarticle{New stellar halo substructures from Gaia DR3 proper motions}
 {\textbf{Mikkola, D.}; McMillan, P. J.; Hobbs, D. (2022)}
 {\textit{Submitted to Monthly Notices of the Royal Astronomical Society}}%Monthly Notices of the Royal Astronomical Society, Volume VVV, Issue I, pp. pppp-pppp}
 %\phdarticle{Paper 4 title}
@@ -214,7 +218,7 @@ This thesis is based on the following peer-reviewed publications:
 
 % Bibliography renamed to references
 \renewcommand{\bibname}{References}
-\bibliographystyle{aasjournal.bst}
+\bibliographystyle{mnras.bst}
 \input{aasjournalmacros.tex}
 {\footnotesize\bibliography{references}}  % Link to bibtex file %%%%%%%%%%%%%%%%%%%
 
@@ -230,7 +234,7 @@ This thesis is based on the following peer-reviewed publications:
 
 \chapterhidenum{Scientific publications}
 
-\input{papers/authorcontributions}
+% \input{papers/authorcontributions}
 
 % ==================================
 % INSERT PAPERS
