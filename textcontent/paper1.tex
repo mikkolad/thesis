@@ -11,7 +11,7 @@ In the paper we seek to answer how this provenance bias is affected by spiral mo
 \section{Setting up simulations}\label{sec:p1-simulations}
 All of our simulations are setup and run using packages available as part of the \textsc{nemo}\footnote{\url{https://teuben.github.io/nemo/}}\citep{teuben:95} toolbox. We start with a pure $N$-body isolated galaxy system designed to be similar to the Milky Way. The scale lengths and masses of components we use are chosen with inspiration from \cite{mcmillan:17}. The full specifics of each component and the chosen parameters are found in paper I.
 
-We follow the procedure of \cite{mcmillan:07} which describes the production of an equilibrium system of bulge, halo, and disc. The paper describes the procedure used in the \textsc{NEMO} package \textsc{mkgalaxy}, which in turn uses \textsc{mkwd99disc} and \textsc{mkhalo}. These are the packages we use to create our system as well. This disc has a standard shape with a density profile that decreases exponentially in radius and has a $\mathrm{sech}^2$ vertical profile:
+We follow the procedure of \cite{mcmillan:07} which describes the production of an equilibrium system of bulge, halo, and disc. The paper describes the procedure used in the \textsc{NEMO} package \textsc{mkgalaxy}, which in turn uses \textsc{mkwd99disc} and \textsc{mkhalo} to create the different components. This disc has a standard shape with a density profile that decreases exponentially in radius and has a $\mathrm{sech}^2$ vertical profile:
 \begin{equation}
     \rho_\mathrm{disc}(R, z) = \frac{1}{2z_\mathrm{d}} \Sigma_0 \exp\left(-\frac{R}{R_\mathrm{d}}\right) \mathrm{sech}^2\left(\frac{z}{z_\mathrm{d}}\right).
 \end{equation}
